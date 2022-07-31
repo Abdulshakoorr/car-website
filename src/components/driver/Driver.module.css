@@ -1,0 +1,68 @@
+.drive_container{
+    max-width: 1040px;
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+.drive_image{
+    max-width: 550px;
+}
+.drive_image img{
+    width: 100%;
+}
+.drive_text{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.drive_text h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.drive_text h1{
+    color: blueviolet;
+}
+.drive_text p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.drive_text a{
+    font-size: 1rem;
+    font-weight: medium;
+    color: #fff;
+    background: rgb(35, 35, 35);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 0;
+}
+.drive_text a:hover{
+    background: rgb(20, 19, 19);
+}
+@media screen and (max-width: 786px){
+    .drive_container{
+        grid-template-columns: 1fr;
+    }
+    .drive_text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .drive_text h2{
+        font-size: 1.5rem;
+    }
+    .drive_text h1{
+        color: blueviolet;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .drive_text p{
+        font-size: .8rem;
+        padding: .4rem .8rem;
+    }
+}
